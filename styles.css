@@ -422,7 +422,7 @@ line-height: 60px;
         margin: -8rem;
         }
     }
-    
+
     .gameList {
         height: fit-content;
         width: 80%;
@@ -430,7 +430,7 @@ line-height: 60px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0 auto;
+        margin: 3.6rem auto;
         align-items: center;
         gap: 2rem;
     }
@@ -445,6 +445,7 @@ height: 50px;
 font-size: 16px;
 font-weight: 600;
     padding: 8px 10px;
+    cursor: pointer;
 }
     .game:hover {
         border-radius: 50px;
@@ -472,3 +473,68 @@ transition: all 0.4s;
             margin-right: 6px;
                 }
         }
+
+        /* game section done  */
+        footer {
+            background: #0B0223;
+            height: fit-content;
+            width: 100vw;
+            color: #fff;
+            padding: 7.5rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        footer ul {
+            display: flex;
+            gap: 3.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+    footer ul li {
+        cursor: pointer;
+        list-style: none;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    footer ul li:hover {
+color: #F948B2;
+transition: color 0.6s;
+    }
+    footer .icons i {
+        font-size: 36px;
+        padding: 1.2rem;
+        cursor: pointer;
+    }
+    .termSection , footer p {
+        color: rgba(255, 255, 255, 0.60);
+        font-weight: none;
+        font-size: 13px;
+    }
+
+    
+    @media only screen and (max-width: 600px) {
+        footer {
+            color: #fff;
+            padding: 6rem 1.5rem;
+            gap: 1rem;
+        }
+        footer ul {
+            gap: 2rem;
+            width: 70%
+        }
+    footer ul li {
+        font-size: 11px;
+    }
+    footer .icons i {
+        font-size: 30px;
+        padding: 0.8rem;
+    }
+    .termSection , footer p {
+        font-size: 10px;
+    }
+    }
