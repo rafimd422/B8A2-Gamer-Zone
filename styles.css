@@ -210,7 +210,7 @@ header img {
 .videos {
     height: fit-content;
     width: 100vw;
-    padding: 2rem 0;
+    padding: 0.2rem 0;
     text-align: center;
 }
 .videos h3{
@@ -309,173 +309,119 @@ line-height: 20px;
     }
     /* video section complate */
 
-    /* .play {
-        height: 80vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        gap: 5rem;
-        position: relative;
-        justify-content: center;
-        margin-bottom: 12rem;
-    }
-    .playDescription {
-        text-align: right;
-        width: 45%;
-        margin: 0 auto;
-    }
-    .playDescription h3{
-font-size: 48px;
+.playSection {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    gap: 1rem;
+}
+
+.playImage {
+    position: relative;
+    margin-bottom: 4rem;
+}
+.playImage .imageOne{
+    width: 640px;
+    height: 580px;
+}
+.playImage .imageTwo{
+position: absolute;
+margin: -12rem;
+bottom: 0;
+width: 300px;
+height: 340px;
+}
+.playdesc {
+    margin-left: 4rem;
+}
+.playdesc h3 {
+font-size: 44px;
 font-weight: 700;
 line-height: 60px;
-    }
-    .playDescription span{
-        background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-    }
-    .playDescription p {
-        color: #534C64;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px; 
-    }
-.playImg {
-    display: block;
-    position: relative;
-    height: 100%;
-    align-self: center;
-    margin-left: 4rem;
-    width: 50%;
-    margin: 0 auto;
 }
-.playImg img {
-    position: absolute;
-    bottom: 0%;
-    left: 0;
-    object-fit: contain;
+.playdesc p {
+    color: #534C64;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; 
 }
-.imgOne {
-    width: 550px;
-height: 580px;
+.playdesc span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.imgTwo {
-    position: absolute;
-    margin: -5rem;
-}
-@media only screen and (max-width: 1260px) {
-    .imgOne {
-        width: 500px;
-    height: 550px;
+@media only screen and (max-width: 1188px) {
+    .playSection{
+        flex-wrap: wrap;
     }
-    .imgTwo {
-        width: 220px;
+    .playImage .imageOne{
+        width: 520px;
+        height: 490px;
     }
-    .playDescription {
-        margin-right: 20rem;
-    }
-    .playDescription h3{
-        font-size: 40px;
-        line-height: 48px;
-        margin-bottom: 0.8rem;
-            }
-    }
-@media only screen and (max-width: 960px) {
-    .imgOne {
-        width: 320px;
-    }
-    .imgTwo {
-        width: 180px;
-        margin: -1.5rem;
-    }
-    .playDescription {
-        margin: 0 auto;
-    }
-    .playDescription h3{
-        font-size: 34px;
-        line-height: 46px;
-        margin-bottom: 0.8rem;
-            } 
-
-    .play {
-        height: 80vh;
-        gap: 2rem;
-        position: static;
-        flex-direction: column;
-        margin-bottom: 2rem;
-        margin: 0 auto;
-        justify-content: center;
-    }
-    .playDescription {
-        width: 80%;
-    }  
-    }
-@media only screen and (max-width: 760px) {
-    .imgOne {
+    .playImage .imageTwo{
+        position: absolute;
+        bottom: 3rem;
         width: 240px;
+        height: 280px;
+        }
     }
-    .imgTwo {
-        width: 130px;
-        margin: 5rem;
-        margin-left: -2.2rem;
+@media only screen and (max-width: 788px) {
+.playSection {
+    justify-content: center;
+}
+    .playdesc h3 {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 40px;
+        margin-bottom: 0.8rem;
+        }
+        .playdesc p {
+            font-size: 14px;
+            line-height: 20px; 
+        }
+
+    .playImage .imageOne{
+        width: 380px;
+        height: 340px;
     }
-    .playDescription h3{
+    .playImage .imageTwo{
+        position: absolute;
+        width: 180px;
+        height: 220px;
+        margin: -8rem;
+        }
+    }
+@media only screen and (max-width: 560px) {
+.playSection {
+    gap: 0.4rem;
+}
+.playdesc {
+    margin-top: -2rem;
+}
+    .playdesc h3 {
         font-size: 30px;
-        line-height: 42px;
-        margin-bottom: 2rem;
-            } 
-            .playDescription p {
-                font-size: 13px;
-                font-weight: 400;
-                line-height: 15px; 
-             
-            }
-    } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        margin-bottom: 0.2rem;
+        line-height: 29px;
+        }
+        .playdesc p {
+            font-size: 12px;
+            line-height: 20px; 
+        }
+    .playImage .imageOne{
+        width: 310px;
+        height: 270px;
+    }
+    .playImage .imageTwo{
+        position: absolute;
+        width: 160px;
+        height: 180px;
+        margin: -8rem;
+        }
+    }
     
     .gameList {
         height: fit-content;
