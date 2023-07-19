@@ -309,7 +309,7 @@ line-height: 20px;
     }
     /* video section complate */
 
-    .play {
+    /* .play {
         height: 80vh;
         width: 100vw;
         display: flex;
@@ -372,6 +372,9 @@ height: 580px;
     .imgTwo {
         width: 220px;
     }
+    .playDescription {
+        margin-right: 20rem;
+    }
     .playDescription h3{
         font-size: 40px;
         line-height: 48px;
@@ -428,4 +431,98 @@ height: 580px;
                 line-height: 15px; 
              
             }
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    .gameList {
+        height: fit-content;
+        width: 80%;
+        margin-top: 7rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        align-items: center;
+        gap: 2rem;
     }
+    .gameList img {
+width: 50px;
+height: 50px;
+        margin-right: 6px;
+    }
+    .game {
+        display: flex;
+        align-items: center;
+font-size: 16px;
+font-weight: 600;
+    padding: 8px 10px;
+}
+    .game:hover {
+        border-radius: 50px;
+background: #FFF;
+background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+border: 1px solid #FF42A5;
+transition: all 0.4s;
+    }
+
+
+    @media only screen and (max-width: 760px) {
+        .game {
+    font-size: 10px;
+        }
+        .gameList {
+            height: fit-content;
+            width: 100%;
+        }
+        .gameList img {
+            width:34px;
+            height: 35px;
+            margin-right: 6px;
+                }
+        }
